@@ -9,6 +9,7 @@ class Module
   # @param [Symbol, String, #to_sym] name
   # @return [Symbol, String] 1.8: String, 1.9: Symbol
   def instance_method_visibility(name)
+    name = name.to_sym
     return RUBY_VERSION < '1.9' ? "public" : :public if public_method_defined? name
     return RUBY_VERSION < '1.9' ? "protected" : :protected if protected_method_defined? name
     return RUBY_VERSION < '1.9' ? "private" : :private if private_method_defined? name

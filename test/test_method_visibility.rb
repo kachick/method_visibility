@@ -38,7 +38,7 @@ class Test_GetInstanceMethodVisibility < Test::Unit::TestCase
       Bar.instance_method_visibility(:none)
     end
 
-    assert_raises TypeError, NoMethodError do
+    assert_raises NoMethodError do
       Bar.instance_method_visibility(1)
     end
   end
@@ -71,7 +71,7 @@ class Test_GetMethodVisibility < Test::Unit::TestCase
       BAR.method_visibility(:none)
     end
 
-    assert_raises TypeError, NoMethodError do
+    assert_raises NoMethodError do
       BAR.method_visibility(1)
     end
   end
