@@ -38,8 +38,14 @@ class Test_GetInstanceMethodVisibility < Test::Unit::TestCase
       Bar.instance_method_visibility(:none)
     end
 
-    assert_raises NoMethodError do
-      Bar.instance_method_visibility(1)
+    if RUBY_VERSION >= '1.9'
+      assert_raises NoMethodError do
+        Bar.instance_method_visibility(1)
+      end
+    else
+      assert_raises TypeError do
+        Bar.instance_method_visibility(1)
+      end
     end
   end
 
@@ -71,8 +77,14 @@ class Test_GetMethodVisibility < Test::Unit::TestCase
       BAR.method_visibility(:none)
     end
 
-    assert_raises NoMethodError do
-      BAR.method_visibility(1)
+    if RUBY_VERSION >= '1.9'
+      assert_raises NoMethodError do
+        BAR.method_visibility(1)
+      end
+    else
+      assert_raises NameError do
+        BAR.method_visibility(1)
+      end
     end
   end
 
