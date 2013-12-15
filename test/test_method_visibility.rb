@@ -2,8 +2,6 @@
 
 require 'test/unit'
 
-$VERBOSE = true
-
 require "#{File.dirname(File.dirname(__FILE__))}/lib/method_visibility"
 
 
