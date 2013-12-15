@@ -1,3 +1,4 @@
+# coding: us-ascii
 # method_visibility  - Get visibility for a method name.
 # Copyright (c) 2012 Kenichi Kamiya
 

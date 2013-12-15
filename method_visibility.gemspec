@@ -1,3 +1,5 @@
+# coding: us-ascii
+
 Gem::Specification.new do |gem|
   gem.name          = 'method_visibility'
   gem.version       = '0.0.1'
