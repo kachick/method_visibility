@@ -1,6 +1,9 @@
 method_visibility
 ====================
 
+[![Build Status](https://secure.travis-ci.org/kachick/method_visibility.png)](http://travis-ci.org/kachick/method_visibility)
+[![Gem Version](https://badge.fury.io/rb/method_visibility.png)](http://badge.fury.io/rb/method_visibility)
+
 Description
 -----------
 
@@ -34,8 +37,7 @@ Bar.new.method_visibility :modified_foobar    #=> :protected (1.8.7: String, 1.9
 Requirements
 -------------
 
-* Ruby - [1.8.7 or later](http://travis-ci.org/#!/kachick/method_visibility)
-* [visibility_predicates](http://kachick.github.com/visibility_predicates/)
+* [Ruby 1.8.7 or later](http://travis-ci.org/#!/kachick/method_visibility)
 
 Install
 -------
@@ -43,11 +45,6 @@ Install
 ```bash
 gem install method_visibility
 ```
-
-Build Status
--------------
-
-[![Build Status](https://secure.travis-ci.org/kachick/method_visibility.png)](http://travis-ci.org/kachick/method_visibility)
 
 Link
 ----
