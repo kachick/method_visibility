@@ -2,7 +2,7 @@
 
 require 'test/unit'
 
-require "#{File.dirname(File.dirname(__FILE__))}/lib/method_visibility"
+require_relative '../lib/method_visibility'
 
 
 class Foo
@@ -38,14 +38,8 @@ class Test_GetInstanceMethodVisibility < Test::Unit::TestCase
       Bar.instance_method_visibility(:none)
     end
 
-    if RUBY_VERSION >= '1.9'
-      assert_raises NoMethodError do
-        Bar.instance_method_visibility(1)
-      end
-    else
-      assert_raises TypeError do
-        Bar.instance_method_visibility(1)
-      end
+    assert_raises NoMethodError do
+      Bar.instance_method_visibility(1)
     end
   end
 
@@ -77,14 +71,8 @@ class Test_GetMethodVisibility < Test::Unit::TestCase
       BAR.method_visibility(:none)
     end
 
-    if RUBY_VERSION >= '1.9'
-      assert_raises NoMethodError do
-        BAR.method_visibility(1)
-      end
-    else
-      assert_raises NameError do
-        BAR.method_visibility(1)
-      end
+    assert_raises NoMethodError do
+      BAR.method_visibility(1)
     end
   end
 
@@ -100,9 +88,8 @@ class Test_GetMethodVisibility_README < Test::Unit::TestCase
     protected :modified_foobar
   end
 
-  def test_return_value
-    expectation = RUBY_VERSION < '1.9' ? "protected" : :protected
-    assert_equal expectation, Bar.new.method_visibility(:modified_foobar)
+  def test_return_value 
+    assert_equal :protected, Bar.new.method_visibility(:modified_foobar)
   end
 
 end
