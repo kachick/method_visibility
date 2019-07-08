@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.description   = 'Get visibility for a method name.'
   gem.summary       = gem.description.dup
   gem.license       = 'MIT'
-  gem.version       = '0.0.2'
+  gem.version       = '0.1.0'
 
   gem.add_runtime_dependency 'visibility_predicates', '~> 0.0.2'
 
