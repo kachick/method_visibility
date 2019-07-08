@@ -37,7 +37,7 @@ Bar.new.method_visibility :modified_foobar    #=> :protected (1.8.7: String, 1.9
 Requirements
 -------------
 
-* [Ruby 1.8.7 or later](http://travis-ci.org/#!/kachick/method_visibility)
+* [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/method_visibility)
 
 Install
 -------
