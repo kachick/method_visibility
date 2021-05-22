@@ -1,8 +1,9 @@
 method_visibility
 ====================
 
-[![Build Status](https://secure.travis-ci.org/kachick/method_visibility.png)](http://travis-ci.org/kachick/method_visibility)
-[![Gem Version](https://badge.fury.io/rb/method_visibility.png)](http://badge.fury.io/rb/method_visibility)
+* ***This repository is archived***
+* ***No longer maintained***
+* ***All versions have been yanked from https://rubygems.org for releasing valuable namespace for others***
 
 Description
 -----------
@@ -39,27 +40,9 @@ Requirements
 
 * [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/method_visibility)
 
-Install
--------
-
-```bash
-gem install method_visibility
-```
-
-Link
-----
-
-* [Home](http://kachick.github.com/method_visibility/)
-* [code](https://github.com/kachick/method_visibility)
-* [API](http://kachick.github.com/method_visibility/yard/frames.html)
-* [issues](https://github.com/kachick/method_visibility/issues)
-* [CI](http://travis-ci.org/#!/kachick/method_visibility)
-* [gem](https://rubygems.org/gems/method_visibility)
-
 License
 --------
 
 The MIT X11 License  
 Copyright (c) 2012 Kenichi Kamiya  
 See MIT-LICENSE for further details.
-
